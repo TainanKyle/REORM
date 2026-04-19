@@ -1,0 +1,18 @@
+[
+  {
+    "input": "footprint.png",
+    "instruction": "Remove the person."
+  },
+  {
+    "input": "water.png",
+    "instruction": "Remove the hand."
+  },
+  {
+    "input": "extinguisher.png",
+    "instruction": "Remove the fire extinguisher."
+  },
+  {
+    "input": "I-211026_O01004_W01_F0042.png",
+    "instruction": "Remove the person."
+  }
+]

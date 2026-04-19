@@ -1,0 +1,60 @@
+# ------------------------------
+# OS / Editor
+# ------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ------------------------------
+# Python cache / build
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ------------------------------
+# Virtual environments / local env vars
+# ------------------------------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+.env
+.env.*
+!.env.example
+
+# ------------------------------
+# Dataset / components / Runtime outputs
+# ------------------------------
+data/*
+!data/testcases/
+!data/testcases/**
+component/
+outputs/
+logs/
+*.log
+
+# ------------------------------
+# Model checkpoints / large binaries
+# ------------------------------
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# ------------------------------
+# Misc temporary files
+# ------------------------------
+*.tmp
+*.temp
+*.swp
+*~
