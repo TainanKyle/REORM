@@ -34,7 +34,7 @@ echo "================================="
 
 # Step 1: Run object detection in env1
 echo "STEP 1: Object Detection..."
-conda activate myllm
+conda activate reorm
 python -m src.inference.api_llm.inference_api_llm_1 --image_folder "$INPUT_FOLDER" --json_path "$JSON_FOLDER" --output_folder "$OUTPUT_FOLDER" "${API_ARGS[@]}"
 echo "STEP 1: Finished."
 
@@ -46,7 +46,7 @@ echo "STEP 2: Finished."
 
 # Step 3: Run self-correction in env1
 echo "STEP 3: Self-Correction..."
-conda activate myllm
+conda activate reorm
 python -m src.inference.api_llm.inference_api_llm_3 --image_folder "$INPUT_FOLDER" --json_path "$JSON_FOLDER" --output_folder "$OUTPUT_FOLDER" "${API_ARGS[@]}"
 echo "STEP 3: Finished."
 

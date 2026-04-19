@@ -25,13 +25,13 @@ echo "==================================="
 
 # Step 1: Run object detection in env1
 echo "STEP 1: Object Detection..."
-conda activate llava_research
+conda activate reorm_llava
 python -m src.inference.multi_llm.inference_multi_llm_1 --image_folder "$INPUT_FOLDER" --json_path "$JSON_FOLDER" --output_folder "$OUTPUT_FOLDER"
 echo "STEP 1: Finished."
 
 # Step 2: Run segmentation in env2
 echo "STEP 2: Segmentation..."
-conda activate myllm
+conda activate reorm
 python -m src.inference.multi_llm.inference_multi_llm_2 --image_folder "$INPUT_FOLDER" --json_path "$JSON_FOLDER" --output_folder "$OUTPUT_FOLDER"
 echo "STEP 2: Finished."
 
